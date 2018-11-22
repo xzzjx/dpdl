@@ -187,7 +187,7 @@ def train():
     # train_data = train_data.reshape(train_data.shape[0], -1)
     # test_data = test_data.reshape(test_data.shape[0], -1)
     train_labels = perturb(train_labels)
-    train_labels = get_noise_lable(train_labels)
+    # train_labels = get_noise_lable(train_labels)
 
     assert train_with_noise_ce(train_data, train_labels, ckpt_path)
 

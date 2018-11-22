@@ -67,7 +67,7 @@ def inference(images):
 
     with tf.variable_scope('fc2') as scope:
         # hk = FLAGS.hk
-        hk = 84
+        hk = 25
         weights = get_weights('weights', shape=[120, hk], stddev=0.04)
         biases = get_biases('biases', shape=[hk], init=0.0)
         fc2 = tf.matmul(fc1, weights) + biases
@@ -76,20 +76,20 @@ def inference(images):
         batch_mean, batch_var = tf.nn.moments(fc2, [0])
         beta2 = tf.zeros_like(fc2)
         scale2 = tf.ones_like(fc2)
-        hfc1 = tf.nn.batch_normalization(fc2, batch_mean, batch_var, beta2, scale2, 1e-3)
+        BN = tf.nn.batch_normalization(fc2, batch_mean, batch_var, beta2, scale2, 1e-3)
         # print("BN shape: ", BN.get_shape())
         # hfc1 = max_out(BN, hk)
         # hfc1 = tf.contrib.layers.maxout(BN, hk)
-        # hfc1 = tf.clip_by_value(BN, -1, 1)
+        hfc1 = tf.clip_by_value(BN, -1, 1)
 
-    # with tf.variable_scope('FM') as scope:
-    #     deltaf = 10 * (hk + 1/4 * (hk ** 2))
-    #     epsilon = FLAGS.epsilon
-    #     batch_size = FLAGS.batch_size
-    #     scale = deltaf / (epsilon * batch_size)
-    #     noise = np.random.laplace(0.0, scale, 10)
-    #     noise = np.reshape(noise, [10])
-        # hfc1 = hfc1 * noise + hfc1
+    with tf.variable_scope('FM') as scope:
+        deltaf = 10 * (hk + 1/4 * (hk ** 2))
+        epsilon = FLAGS.epsilon
+        batch_size = FLAGS.batch_size
+        scale = deltaf / (epsilon * batch_size)
+        noise = np.random.laplace(0.0, scale, hk)
+        noise = np.reshape(noise, [hk])
+        hfc1 = hfc1 * noise + hfc1
 
     with tf.variable_scope('fc3') as scope:
         weights = get_weights('weights', shape=[hk, 10], stddev=0.04)
@@ -110,14 +110,8 @@ def loss_fun(logits, y):
     neg_abs_logits = tf.where(cond, -logits, logits)
 
     # hk = 25
-    deltaf = 10 * 2
-    epsilon = FLAGS.epsilon
-    batch_size = FLAGS.batch_size
-    scale = deltaf / (epsilon * batch_size)
-    noise = np.random.laplace(0.0, scale, 10)
-    noise = np.reshape(noise, [10])
-    y = y + noise
-    y = (1-FLAGS.label_ratio)/10 + FLAGS.label_ratio*y
+    # y = y + noise
+    # y = (1-FLAGS.label_ratio)/10 + FLAGS.label_ratio*y
     # loss = tf.add(relu_logits - logits * y, math.log(2.0) + 0.5*neg_abs_logits + 1.0 / 8.0 * neg_abs_logits**2, name='noise_loss')
     loss = tf.add(relu_logits - logits * y, tf.log(1 + tf.exp(neg_abs_logits)))
     return loss
