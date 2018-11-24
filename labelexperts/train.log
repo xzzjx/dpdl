@@ -1,0 +1,207 @@
+placeholder done
+2018-11-23 20:38:17.705261: step 0, loss = 0.69 (1816.4 examples/sec; 0.991 sec/batch)
+2018-11-23 20:38:24.813498: step 100, loss = 0.69 (25284.1 examples/sec; 0.071 sec/batch)
+2018-11-23 20:38:31.892487: step 200, loss = 0.69 (25472.7 examples/sec; 0.071 sec/batch)
+2018-11-23 20:38:38.994482: step 300, loss = 0.69 (25375.8 examples/sec; 0.071 sec/batch)
+2018-11-23 20:38:46.128325: step 400, loss = 0.69 (25289.8 examples/sec; 0.071 sec/batch)
+2018-11-23 20:38:53.276706: step 500, loss = 0.69 (25204.5 examples/sec; 0.071 sec/batch)
+2018-11-23 20:39:00.441665: step 600, loss = 0.68 (25077.0 examples/sec; 0.072 sec/batch)
+2018-11-23 20:39:07.607351: step 700, loss = 0.68 (25191.7 examples/sec; 0.071 sec/batch)
+2018-11-23 20:39:14.797785: step 800, loss = 0.67 (25132.0 examples/sec; 0.072 sec/batch)
+2018-11-23 20:39:22.050154: step 900, loss = 0.66 (24812.6 examples/sec; 0.073 sec/batch)
+2018-11-23 20:39:29.423368: step 1000, loss = 0.65 (24423.7 examples/sec; 0.074 sec/batch)
+2018-11-23 20:39:36.998439: step 1100, loss = 0.64 (23870.5 examples/sec; 0.075 sec/batch)
+2018-11-23 20:39:44.659451: step 1200, loss = 0.64 (23222.5 examples/sec; 0.078 sec/batch)
+2018-11-23 20:39:52.397005: step 1300, loss = 0.63 (23158.0 examples/sec; 0.078 sec/batch)
+2018-11-23 20:40:00.214462: step 1400, loss = 0.63 (22506.2 examples/sec; 0.080 sec/batch)
+[[0.4771496 ]
+ [0.09709636]
+ [0.48004392]
+ [0.47271746]
+ [0.47103217]]
+student's train accuracy is  0.6153960249184218
+student's test accuracy is  0.6757709251101321
+placeholder done
+2018-11-23 20:40:09.525645: step 0, loss = 0.69 (19221.6 examples/sec; 0.094 sec/batch)
+2018-11-23 20:40:17.628225: step 100, loss = 0.69 (22600.0 examples/sec; 0.080 sec/batch)
+2018-11-23 20:40:25.843079: step 200, loss = 0.69 (21788.6 examples/sec; 0.083 sec/batch)
+2018-11-23 20:40:34.037594: step 300, loss = 0.69 (21858.2 examples/sec; 0.082 sec/batch)
+2018-11-23 20:40:42.420039: step 400, loss = 0.69 (21333.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:40:50.856424: step 500, loss = 0.68 (21417.6 examples/sec; 0.084 sec/batch)
+2018-11-23 20:40:59.295454: step 600, loss = 0.68 (21173.7 examples/sec; 0.085 sec/batch)
+2018-11-23 20:41:07.845068: step 700, loss = 0.67 (20317.4 examples/sec; 0.089 sec/batch)
+2018-11-23 20:41:16.777485: step 800, loss = 0.65 (20425.8 examples/sec; 0.088 sec/batch)
+2018-11-23 20:41:25.724410: step 900, loss = 0.65 (19737.2 examples/sec; 0.091 sec/batch)
+2018-11-23 20:41:34.657631: step 1000, loss = 0.64 (20214.3 examples/sec; 0.089 sec/batch)
+2018-11-23 20:41:43.637500: step 1100, loss = 0.64 (19853.3 examples/sec; 0.091 sec/batch)
+2018-11-23 20:41:52.592735: step 1200, loss = 0.63 (20333.7 examples/sec; 0.089 sec/batch)
+2018-11-23 20:42:01.356488: step 1300, loss = 0.63 (21274.3 examples/sec; 0.085 sec/batch)
+2018-11-23 20:42:09.804692: step 1400, loss = 0.64 (21238.7 examples/sec; 0.085 sec/batch)
+[[0.538572  ]
+ [0.01481966]
+ [0.57602364]
+ [0.43064955]
+ [0.4474855 ]]
+student's train accuracy is  0.38821752265861026
+student's test accuracy is  0.5968992248062015
+placeholder done
+2018-11-23 20:42:19.580578: step 0, loss = 0.69 (18204.0 examples/sec; 0.099 sec/batch)
+2018-11-23 20:42:28.094588: step 100, loss = 0.69 (21258.0 examples/sec; 0.085 sec/batch)
+2018-11-23 20:42:36.539837: step 200, loss = 0.69 (21338.1 examples/sec; 0.084 sec/batch)
+2018-11-23 20:42:44.956389: step 300, loss = 0.69 (21474.6 examples/sec; 0.084 sec/batch)
+2018-11-23 20:42:53.373792: step 400, loss = 0.69 (21271.9 examples/sec; 0.085 sec/batch)
+2018-11-23 20:43:01.793282: step 500, loss = 0.69 (21247.2 examples/sec; 0.085 sec/batch)
+2018-11-23 20:43:10.202666: step 600, loss = 0.67 (21525.4 examples/sec; 0.084 sec/batch)
+2018-11-23 20:43:18.612010: step 700, loss = 0.67 (21343.2 examples/sec; 0.084 sec/batch)
+2018-11-23 20:43:27.022393: step 800, loss = 0.66 (21456.4 examples/sec; 0.084 sec/batch)
+2018-11-23 20:43:35.428424: step 900, loss = 0.66 (21482.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:43:43.841969: step 1000, loss = 0.64 (21479.0 examples/sec; 0.084 sec/batch)
+2018-11-23 20:43:52.290163: step 1100, loss = 0.64 (21334.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:44:00.703359: step 1200, loss = 0.63 (21346.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:44:09.111730: step 1300, loss = 0.63 (21483.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:44:17.521651: step 1400, loss = 0.64 (21509.7 examples/sec; 0.084 sec/batch)
+[[0.47890893]
+ [0.14878055]
+ [0.5056139 ]
+ [0.544029  ]
+ [0.4997543 ]]
+student's train accuracy is  0.6759093133257218
+student's test accuracy is  0.6881188118811881
+placeholder done
+2018-11-23 20:44:27.251275: step 0, loss = 0.69 (18840.9 examples/sec; 0.096 sec/batch)
+2018-11-23 20:44:35.696028: step 100, loss = 0.69 (21554.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:44:44.085149: step 200, loss = 0.69 (21348.0 examples/sec; 0.084 sec/batch)
+2018-11-23 20:44:52.481160: step 300, loss = 0.69 (21396.0 examples/sec; 0.084 sec/batch)
+2018-11-23 20:45:00.866374: step 400, loss = 0.69 (21506.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:45:09.257739: step 500, loss = 0.69 (21593.8 examples/sec; 0.083 sec/batch)
+2018-11-23 20:45:17.650851: step 600, loss = 0.69 (21567.4 examples/sec; 0.083 sec/batch)
+2018-11-23 20:45:26.030271: step 700, loss = 0.68 (21538.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:45:34.420010: step 800, loss = 0.67 (21093.3 examples/sec; 0.085 sec/batch)
+2018-11-23 20:45:42.818106: step 900, loss = 0.66 (21562.3 examples/sec; 0.083 sec/batch)
+2018-11-23 20:45:51.248847: step 1000, loss = 0.66 (20495.1 examples/sec; 0.088 sec/batch)
+2018-11-23 20:46:00.229410: step 1100, loss = 0.65 (20034.9 examples/sec; 0.090 sec/batch)
+2018-11-23 20:46:09.286332: step 1200, loss = 0.65 (19893.3 examples/sec; 0.090 sec/batch)
+2018-11-23 20:46:18.188250: step 1300, loss = 0.63 (20105.0 examples/sec; 0.090 sec/batch)
+2018-11-23 20:46:27.061266: step 1400, loss = 0.64 (20342.0 examples/sec; 0.088 sec/batch)
+[[0.50350577]
+ [0.02570781]
+ [0.4904561 ]
+ [0.47810256]
+ [0.51776206]]
+student's train accuracy is  0.3781239301609038
+student's test accuracy is  0.6232179226069247
+placeholder done
+2018-11-23 20:46:37.409994: step 0, loss = 0.69 (17510.8 examples/sec; 0.103 sec/batch)
+2018-11-23 20:46:46.419771: step 100, loss = 0.69 (19994.7 examples/sec; 0.090 sec/batch)
+2018-11-23 20:46:55.345102: step 200, loss = 0.69 (20433.2 examples/sec; 0.088 sec/batch)
+2018-11-23 20:47:04.279971: step 300, loss = 0.69 (20057.2 examples/sec; 0.090 sec/batch)
+2018-11-23 20:47:13.197189: step 400, loss = 0.69 (19784.6 examples/sec; 0.091 sec/batch)
+2018-11-23 20:47:22.129004: step 500, loss = 0.69 (20253.9 examples/sec; 0.089 sec/batch)
+2018-11-23 20:47:31.053717: step 600, loss = 0.69 (19881.8 examples/sec; 0.091 sec/batch)
+2018-11-23 20:47:40.104191: step 700, loss = 0.68 (21319.4 examples/sec; 0.084 sec/batch)
+2018-11-23 20:47:48.574028: step 800, loss = 0.67 (21327.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:47:56.979088: step 900, loss = 0.66 (21528.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:48:05.382323: step 1000, loss = 0.65 (21543.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:48:13.816634: step 1100, loss = 0.65 (21521.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:48:22.221487: step 1200, loss = 0.64 (21342.2 examples/sec; 0.084 sec/batch)
+2018-11-23 20:48:30.622141: step 1300, loss = 0.64 (21334.9 examples/sec; 0.084 sec/batch)
+2018-11-23 20:48:39.023931: step 1400, loss = 0.63 (21540.1 examples/sec; 0.084 sec/batch)
+[[0.5496198 ]
+ [0.28709623]
+ [0.51772434]
+ [0.56008345]
+ [0.5125719 ]]
+student's train accuracy is  0.7269876406567054
+student's test accuracy is  0.672645739910314
+placeholder done
+2018-11-23 20:48:48.746976: step 0, loss = 0.69 (18459.9 examples/sec; 0.098 sec/batch)
+2018-11-23 20:48:57.200381: step 100, loss = 0.69 (21514.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:05.616269: step 200, loss = 0.69 (21413.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:14.034376: step 300, loss = 0.69 (21427.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:22.443509: step 400, loss = 0.69 (21455.9 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:30.847276: step 500, loss = 0.69 (21500.2 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:39.255601: step 600, loss = 0.69 (21310.6 examples/sec; 0.084 sec/batch)
+2018-11-23 20:49:47.664814: step 700, loss = 0.68 (21301.5 examples/sec; 0.085 sec/batch)
+2018-11-23 20:49:56.066776: step 800, loss = 0.67 (21518.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:50:04.464210: step 900, loss = 0.65 (21295.4 examples/sec; 0.085 sec/batch)
+2018-11-23 20:50:12.864589: step 1000, loss = 0.65 (21289.0 examples/sec; 0.085 sec/batch)
+2018-11-23 20:50:21.294930: step 1100, loss = 0.64 (21368.3 examples/sec; 0.084 sec/batch)
+2018-11-23 20:50:29.693667: step 1200, loss = 0.64 (21432.4 examples/sec; 0.084 sec/batch)
+2018-11-23 20:50:38.095644: step 1300, loss = 0.64 (21343.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:50:46.493265: step 1400, loss = 0.64 (21435.5 examples/sec; 0.084 sec/batch)
+[[0.49687138]
+ [0.13381076]
+ [0.51117545]
+ [0.5024761 ]
+ [0.5136909 ]]
+student's train accuracy is  0.40385265292328487
+student's test accuracy is  0.6283924843423799
+placeholder done
+2018-11-23 20:50:56.639275: step 0, loss = 0.69 (17611.8 examples/sec; 0.102 sec/batch)
+2018-11-23 20:51:05.127443: step 100, loss = 0.69 (21381.0 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:13.535926: step 200, loss = 0.69 (21329.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:21.946725: step 300, loss = 0.69 (21487.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:30.356133: step 400, loss = 0.69 (21509.0 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:38.768397: step 500, loss = 0.69 (21336.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:47.176507: step 600, loss = 0.68 (21317.6 examples/sec; 0.084 sec/batch)
+2018-11-23 20:51:55.914704: step 700, loss = 0.68 (20367.7 examples/sec; 0.088 sec/batch)
+2018-11-23 20:52:04.844364: step 800, loss = 0.67 (20489.9 examples/sec; 0.088 sec/batch)
+2018-11-23 20:52:13.769712: step 900, loss = 0.66 (20685.1 examples/sec; 0.087 sec/batch)
+2018-11-23 20:52:22.680718: step 1000, loss = 0.66 (20322.0 examples/sec; 0.089 sec/batch)
+2018-11-23 20:52:31.614813: step 1100, loss = 0.65 (20516.6 examples/sec; 0.088 sec/batch)
+2018-11-23 20:52:40.533519: step 1200, loss = 0.64 (19626.2 examples/sec; 0.092 sec/batch)
+2018-11-23 20:52:49.448933: step 1300, loss = 0.64 (20202.9 examples/sec; 0.089 sec/batch)
+2018-11-23 20:52:58.357524: step 1400, loss = 0.63 (19839.3 examples/sec; 0.091 sec/batch)
+[[0.5777158 ]
+ [0.11349453]
+ [0.5517699 ]
+ [0.48509663]
+ [0.5223666 ]]
+student's train accuracy is  0.6518754988028731
+student's test accuracy is  0.6760700389105059
+placeholder done
+2018-11-23 20:53:08.476543: step 0, loss = 0.69 (18338.9 examples/sec; 0.098 sec/batch)
+2018-11-23 20:53:16.962065: step 100, loss = 0.69 (21509.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:53:25.704402: step 200, loss = 0.69 (19640.3 examples/sec; 0.092 sec/batch)
+2018-11-23 20:53:34.340905: step 300, loss = 0.69 (19763.9 examples/sec; 0.091 sec/batch)
+2018-11-23 20:53:42.795869: step 400, loss = 0.69 (21321.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:53:51.243786: step 500, loss = 0.69 (21320.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:53:59.662292: step 600, loss = 0.68 (21328.5 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:08.075318: step 700, loss = 0.67 (21375.9 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:16.482369: step 800, loss = 0.66 (21386.1 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:24.892494: step 900, loss = 0.66 (21388.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:33.297587: step 1000, loss = 0.64 (21074.6 examples/sec; 0.085 sec/batch)
+2018-11-23 20:54:41.738526: step 1100, loss = 0.65 (21474.8 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:50.147082: step 1200, loss = 0.64 (21412.7 examples/sec; 0.084 sec/batch)
+2018-11-23 20:54:58.554490: step 1300, loss = 0.64 (21289.1 examples/sec; 0.085 sec/batch)
+2018-11-23 20:55:06.963255: step 1400, loss = 0.63 (21199.4 examples/sec; 0.085 sec/batch)
+[[0.40717942]
+ [0.12346426]
+ [0.49617884]
+ [0.49242792]
+ [0.4952902 ]]
+student's train accuracy is  0.3180652879849598
+student's test accuracy is  0.5698151950718686
+placeholder done
+2018-11-23 20:55:16.738992: step 0, loss = 0.69 (18251.4 examples/sec; 0.099 sec/batch)
+2018-11-23 20:55:25.313743: step 100, loss = 0.69 (20260.7 examples/sec; 0.089 sec/batch)
+2018-11-23 20:55:34.048108: step 200, loss = 0.69 (20661.4 examples/sec; 0.087 sec/batch)
+2018-11-23 20:55:42.975742: step 300, loss = 0.69 (19853.8 examples/sec; 0.091 sec/batch)
+2018-11-23 20:55:51.895642: step 400, loss = 0.69 (20654.5 examples/sec; 0.087 sec/batch)
+2018-11-23 20:56:00.825717: step 500, loss = 0.68 (20579.9 examples/sec; 0.087 sec/batch)
+2018-11-23 20:56:09.754824: step 600, loss = 0.68 (19956.6 examples/sec; 0.090 sec/batch)
+2018-11-23 20:56:18.665887: step 700, loss = 0.66 (20271.4 examples/sec; 0.089 sec/batch)
+2018-11-23 20:56:27.572296: step 800, loss = 0.66 (20435.5 examples/sec; 0.088 sec/batch)
+2018-11-23 20:56:36.480014: step 900, loss = 0.64 (19982.7 examples/sec; 0.090 sec/batch)
+2018-11-23 20:56:45.421958: step 1000, loss = 0.64 (19932.2 examples/sec; 0.090 sec/batch)
+2018-11-23 20:56:54.376149: step 1100, loss = 0.64 (20023.6 examples/sec; 0.090 sec/batch)
+2018-11-23 20:57:03.298891: step 1200, loss = 0.63 (20178.5 examples/sec; 0.089 sec/batch)
+2018-11-23 20:57:12.217009: step 1300, loss = 0.63 (20508.6 examples/sec; 0.088 sec/batch)
+2018-11-23 20:57:21.109519: step 1400, loss = 0.63 (20296.8 examples/sec; 0.089 sec/batch)
+[[0.49593127]
+ [0.0314167 ]
+ [0.55496436]
+ [0.49607122]
+ [0.516346  ]]
+student's train accuracy is  0.6301899478904017
+student's test accuracy is  0.686818632309217

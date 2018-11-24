@@ -48,9 +48,13 @@ def preprocessing_img():
 
 def perturb(train_labels):
     mask = np.random.uniform(size=train_labels.shape[0])
-    null = np.ones(shape=[10], dtype=np.float32) * 0.1
-    # train_labels = np.where(mask > 0.9, null, train_labels)
+    null = np.ones(shape=[10], dtype=np.float32) * 1.0
     train_labels[mask > FLAGS.label_ratio] = null
+    # null1 = np.ones(shape=[10], dtype=np.float32)
+    # null2 = np.zeros(shape=[10], dtype=np.float32)
+    # t = (1-FLAGS.label_ratio) / 2
+    # train_labels[np.logical_and(mask > FLAGS.label_ratio, mask < FLAGS.label_ratio + t)] = null1 
+    # train_labels[mask >= FLAGS.label_ratio + t] = null2
     return train_labels
 def build_lenet():
     train_data, train_labels, test_data, test_labels = preprocessing()
