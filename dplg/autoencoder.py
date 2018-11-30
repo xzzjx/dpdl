@@ -98,6 +98,7 @@ def MLP(dim, train_data, train_labels, ckpt_path):
     sess = tf.Session()
     sess.run(init)
     data_length = len(train_data)
+    print(data_length)
     batches_per_epoch = train_data.shape[0] // FLAGS.batch_size
     noise = get_noise_batch(batches_per_epoch, dim)
     for step in xrange(FLAGS.max_steps):
@@ -308,8 +309,10 @@ def mask_label(train_labels):
     return train_labels
 
 def select_unlabel(data_len):
-    mask = np.random.uniform(size=data_len)
-    return mask < FLAGS.label_ratio
+    # mask = np.random.uniform(size=data_len)
+    # return mask < FLAGS.label_ratio
+    mask = np.random.choice(data_len, int(data_len * FLAGS.label_ratio))
+    return mask
 def train():
     '''
     train multiple autoencoder
