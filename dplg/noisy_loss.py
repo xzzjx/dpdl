@@ -6,6 +6,8 @@ import tensorflow as tf
 import numpy as np 
 import math
 
+FLAGS = tf.flags.FLAGS
+
 def compute_loss(a, t, w, n, graph, name=None):
     '''
     a: a=hw+b, is the log likelihood of data sample, shape=[batch_size, nb_labels]
@@ -84,7 +86,21 @@ def backprop_func_noise(op, grad):
     logit = tf.expand_dims(logit, axis=1)
     a = tf.expand_dims(a, axis=2)
     t = tf.expand_dims(t, axis=1)
-    wg = tf.reduce_mean(a*tf.nn.sigmoid(logit) - a*t, axis=0)
-    wg_noise = wg + tf.reduce_mean(noise, axis=0)
+
+    a = tf.Print(a, [a], message='a: ', first_n=10, summarize=100)
+    t = tf.Print(t, [t], message='t: ', first_n=10, summarize=100)
+    noise = 1 / FLAGS.batch_size * noise
+    # noise_at = noise + a*t
+    noise_at = tf.reduce_mean(a*t, axis=0) + noise
+    noise_at = tf.clip_by_value(noise_at, -1.0, 1.0)
+    noise_at = tf.Print(noise_at, [noise_at], message='noise_at: ', first_n=10, summarize=100)
+    wg_noise = tf.reduce_mean(a*tf.nn.sigmoid(logit), axis=0) - noise_at
+    # wg = tf.reduce_mean(a*tf.nn.sigmoid(logit) - noise_at, axis=0)
+    
+    # wg = tf.reduce_mean(a*tf.nn.sigmoid(logit) - a*t, axis=0)
+    # wg_noise = wg + tf.reduce_mean(noise, axis=0)
+    # wg_noise = wg + noise
+
+    # wg_noise = tf.clip_by_value(wg_noise, -1.0, 1.0)
 
     return ag, tg, wg_noise*grad, ng

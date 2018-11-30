@@ -35,6 +35,13 @@ def batch_indices(batch_nb, data_length, batch_size):
 
   return start, end
 
+def batch_indices_isolate(batch_nb, data_length, batch_size):
+  start = int(batch_nb * batch_size)
+  end = int((batch_nb + 1) * batch_size)
+
+  assert end <= data_length
+  return start, end
+  
 def random_batch_indices(data_length, batch_size):
   '''
   This helper function computes a batch start and end index randomly
